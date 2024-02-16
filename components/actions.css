@@ -1,0 +1,47 @@
+@layer component {
+    .actions-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        place-items: center;
+        padding-top: 24px;
+    }
+
+    .action {
+        padding: 23px;
+        border: 1px solid var(--light-border-color);
+        display: flex;
+        place-items: center;
+        box-shadow: 0 1px 1px #0000000d;
+        border-radius: 10px;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: background-color 300ms, translate 300ms;
+    }
+
+    .action:hover {
+        background-color: var(--light-border-color);
+    }
+
+    .action-topup {
+        background-image: url(../images/arrow-up.svg);
+    }
+
+    .action-send {
+        background-image: url(../images/arrow-right.svg);
+    }
+
+    .action-add {
+        background-image: url(../images/add.svg);
+    }
+
+    .action-exchange {
+        background-image: url(../images/exchange.svg);
+    }
+
+    .action-label {
+        font-size: 0.75rem;
+        color: var(--light-text-color);
+        margin-top: 10px;
+        text-align: center;
+    }
+}

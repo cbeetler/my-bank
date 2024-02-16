@@ -1,0 +1,38 @@
+@layer component {
+    .items {
+        padding-left: 0px;
+        list-style-type: none;
+    }
+
+    .items .item {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        background-image: url(../images/chevron-right.svg);
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        padding: 15px 30px 15px 10px;
+        text-decoration: none;
+    }
+    
+    .items li:not(:last-child) {
+        border-bottom: 1px solid var(--light-border-color);
+    }
+
+    .items .item-name {
+        color: var(--dark-color);
+        font-size: 0.938rem;
+        flex: 1;
+        margin: 0;
+    }
+
+    .item-name-contact {
+        margin: 0 0 6px 0;
+    }
+
+    .item-name-phone {
+        color: var(--light-text-color);
+        margin: 0;
+        font-size: 0.875rem;
+    }
+}

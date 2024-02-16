@@ -1,0 +1,12 @@
+@layer page {
+    #onboarding-layout {
+        text-align: center;
+        display: grid;
+        height: 100dvh;
+        padding: 60px 30px 30px;
+    }
+
+    #onboarding-buttons {
+        align-self: end;
+    }
+}

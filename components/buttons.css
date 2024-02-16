@@ -1,0 +1,37 @@
+@layer component {
+    .btn {
+        text-decoration: none;
+        border-radius: 5px;
+        padding: 15px 20px;
+        text-align: center;
+        letter-spacing: 0.4px;
+        display: inline-block;
+        cursor: pointer;
+
+        transition: opacity 800ms, translate 400ms;
+    }
+
+    .btn:hover {
+        opacity: 0.8;
+    }
+
+    .btn:active {
+        translate: 1px 1px;
+    }
+
+    .btn--raised {
+        background-color: var(--primary-color);
+        color: white;
+    }
+
+    .btn--link {
+        color: var(--primary-color);
+    }
+
+    .btn--block {
+        width: 100%;
+        display: block;
+        max-width: 800px;
+        margin-inline: auto;
+    }
+}

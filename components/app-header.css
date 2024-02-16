@@ -1,0 +1,15 @@
+@layer component {
+    #app-header {
+        background-color: var(--primary-color);
+        color: white;
+        padding-top: 28px;
+        padding-bottom: 40px;
+    }
+
+    #app-header h1 {
+        font-size: 1.125rem;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 0px;
+    }
+}

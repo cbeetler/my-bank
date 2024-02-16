@@ -1,0 +1,21 @@
+@layer component {
+    #layout-page-overlay {
+        background-color: white;
+        border-top-right-radius: 16px;
+        border-top-left-radius: 16px;
+        position: relative;
+        margin-top: -16px;
+        padding-top: 10px;
+    }
+
+    .layout-timestamp {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .layout-subpage {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+    }
+}

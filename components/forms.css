@@ -1,0 +1,49 @@
+@layer component {
+    .input {
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+        padding: 13px;
+        border: 1px solid var(--light-border-color);
+        margin: 0; /* fixes iOS bug */
+    }
+
+    .input-search {
+        background-image: url(../images/magnifier.svg);
+        background-position: 5px center;
+        background-repeat: no-repeat;
+        padding-left: 35px;
+        border-radius: 10px;
+    }
+
+    .input-fixed-icon {
+        display: flex;
+    }
+
+    .input-fixed-left {
+        padding: 20px;
+        border: 1px solid var(--light-border-color);
+    }
+
+    .input-fixed-left + .input {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-left: hidden;
+    }
+
+    label {
+        margin-bottom: 14px;
+        display: inline-block;
+        color: var(--light-text-color);
+        font-size: 0.875rem;
+    }
+
+    .form-buttons {
+        display: grid;
+        gap: 15px;
+    }
+
+    .form-line {
+        margin-bottom: 24px;
+    }
+}

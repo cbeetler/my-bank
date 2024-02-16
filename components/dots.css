@@ -1,0 +1,22 @@
+@layer component {
+    #dots {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px;
+        gap: 8px;
+    }
+
+    .dot {
+        border: 1px solid var(--primary-color);
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        scale: 0.75;
+        transition: background-color 200ms, scale 100ms;
+    }
+
+    .dot.active {
+        scale: 1;
+        background-color: var(--primary-color);
+    }
+}
